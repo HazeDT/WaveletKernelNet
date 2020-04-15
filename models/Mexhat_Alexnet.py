@@ -5,7 +5,7 @@ from math import pi
 import torch.nn.functional as F
 
 def Mexh(p):
-    p = 0.04 * p  # 将时间转化为在[-5,5]这个区间内
+    
     y = (1 - torch.pow(p, 2)) * torch.exp(-torch.pow(p, 2) / 2)
 
     return y
